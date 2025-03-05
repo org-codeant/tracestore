@@ -1,0 +1,16 @@
+{
+  "instructions": [
+    {
+      "id": "downstream-impact",
+      "description": "This repository is one service among several that exchange data over HTTP and shared payloads. For every field, status code, value or message this change writes, returns, renames or stops returning, consider who consumes it and what breaks for them, even when no import links the two. Say which consumer is affected and how.",
+      "files": ["**/*"],
+      "scope": ["pr"]
+    },
+    {
+      "id": "security-review",
+      "description": "Review new or changed endpoints and input handling against the OWASP Top 10, and report exploitable issues as security findings with the attack they enable.",
+      "files": ["**/*"],
+      "scope": ["pr"]
+    }
+  ]
+}
